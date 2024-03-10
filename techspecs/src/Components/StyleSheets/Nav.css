@@ -8,10 +8,18 @@
     position: fixed;
 }
 
+.NavIcons{
+    list-style: none;
+    justify-content: center;
+}
+
 .menu-bars {
     font-size: 2rem;
     background: none;
     color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .closeButtonBox {
@@ -29,6 +37,13 @@
     border-radius: 4px;
     align-items: center;
     display: flex;
+}
+
+.CloseButtonCollapse{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 8px;
 }
 
 .closeButton svg {
@@ -71,6 +86,22 @@
     padding: 8px 0px 8px 0;
     list-style: none;
     height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-icon a {
+    height: 40px;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.nav-icon :hover {
+   background-color: white;
 }
 
 .smallIcons{

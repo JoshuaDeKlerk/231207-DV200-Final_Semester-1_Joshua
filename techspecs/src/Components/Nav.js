@@ -17,18 +17,23 @@ function Nav() {
         <IconContext.Provider value={{color: '#fffff'}}>
             <div className="navbar">
                 <div className='menu-bars'>
-                    <FaBars onClick={showSideBar}/>
-                    {SideBarDataCollapse.map((item, index) => {
-                        return (
-                            <div className='smallIcons'>
-                                <li key={index} className={item.cName}>
-                                    <Link to ={item.path}>
-                                        {item.icon}
-                                    </Link>
-                                </li>                            
-                            </div>
-                        )
-                    })}
+                    <li className='NavIcons'>
+                        <div className='CloseButtonCollapse'>
+                            <FaBars onClick={showSideBar}/>
+                        </div>
+                    
+                        {SideBarDataCollapse.map((item, index) => {
+                            return (
+                                <div className='smallIcons'>
+                                    <li key={index} className={item.cName}>
+                                        <Link to ={item.path}>
+                                            {item.icon}
+                                        </Link>
+                                    </li>                            
+                                </div>
+                            )
+                        })}
+                    </li>
                 </div>
             </div>
             <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
