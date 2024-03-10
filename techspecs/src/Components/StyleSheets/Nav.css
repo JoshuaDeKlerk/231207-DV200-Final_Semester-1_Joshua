@@ -4,13 +4,40 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    width: 10vh;
+    width: 80px;
+    position: fixed;
 }
 
 .menu-bars {
     font-size: 2rem;
     background: none;
     color: white;
+}
+
+.closeButtonBox {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.closeButton {
+    color: #f5f5f5;
+    font-size: 26px;
+    width: 100%;
+    padding: 8px 102px 8px 16px;
+    margin: 0;
+    border-radius: 4px;
+    align-items: center;
+    display: flex;
+}
+
+.closeButton svg {
+    margin-right: 10px;
+}
+
+.closeButton:hover {
+    background-color: #1a83ff; /* Background color on hover */
+    cursor: pointer;
 }
 
 .nav-menu {
@@ -38,16 +65,28 @@
     height: 60px;
 }
 
+.nav-icon {
+    display: flex;
+    align-items: center;
+    padding: 8px 0px 8px 0;
+    list-style: none;
+    height: 60px;
+}
+
+.smallIcons{
+    padding-top: 20px;
+}
+
 .nav-text a {
     text-decoration: none;
     color: #f5f5f5;
     font-size: 18px;
-    width: 95%;
+    width: 100%;
     height: 100%;
     display: flex;
-    padding: 0 16px;
     border-radius: 4px;
     align-items: center;
+    padding: 0 16px;
 }
 
 a {
@@ -60,7 +99,8 @@ a {
 
 .nav-menu-items {
     width: 100%;
-
+    padding-right: 16px;
+    padding-left: 16px;
 }
 
 .navbar-toggle {

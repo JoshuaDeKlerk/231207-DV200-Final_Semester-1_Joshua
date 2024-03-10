@@ -21,5 +21,23 @@ export const SideBarData = [
     path: '/Timeline',
     icon: <RiTimeLine />,
     cName: 'nav-text',
-  },    
+  },   
+]
+
+export const SideBarDataCollapse = [
+  {
+    path: '/',
+    icon: <MdDashboard />,
+    cName: 'nav-icon',
+  },  
+  {
+    path: '/Compare',
+    icon: <LuGitCompare />,
+    cName: 'nav-icon',
+  },
+  {
+    path: '/Timeline',
+    icon: <RiTimeLine />,
+    cName: 'nav-icon',
+  },   
 ]
