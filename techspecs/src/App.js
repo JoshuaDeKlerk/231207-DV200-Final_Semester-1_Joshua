@@ -14,8 +14,8 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/Compare" element={<Compare />} />
         <Route path="/Timeline" element={<Timeline />} />
-      </Routes>
-    </Router>
+        </Routes>
+      </Router>
 
   );
 }

@@ -39,5 +39,5 @@ export const SideBarDataCollapse = [
     path: '/Timeline',
     icon: <RiTimeLine />,
     cName: 'nav-icon',
-  },   
+  },    
 ]
