@@ -1,4 +1,4 @@
-.navbar {
+.navbar1 {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -10,12 +10,14 @@
     backdrop-filter: blur(20px);
 }
 
-.NavIcons{
+.NavIcons1{
     list-style: none;
     justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
-.menu-bars {
+.menu-bars1 {
     font-size: 2rem;
     background: none;
     color: white;
@@ -28,6 +30,7 @@
     display: flex;
     align-items: center;
     width: 100%;
+    text-decoration: none;
 }
 
 .closeButton {
@@ -39,6 +42,7 @@
     border-radius: 4px;
     align-items: center;
     display: flex;
+    text-decoration: none;
 }
 
 .CloseButtonCollapse{
@@ -48,8 +52,14 @@
     padding: 8px;
 }
 
+.closeButton p {
+    margin: 0;
+    text-decoration: rgba(255, 255, 255, 0);
+}
+
 .closeButton svg {
     margin-right: 10px;
+    text-decoration: none;
 }
 
 .closeButton:hover {
@@ -85,17 +95,18 @@
     height: 60px;
 }
 
-.nav-icon {
+.nav-icon1 {
     display: flex;
     align-items: center;
-    padding: 8px 0px 8px 0;
+    padding: 0;
     list-style: none;
     height: 60px;
     align-items: center;
     justify-content: center;
+    margin: 8px 0;
 }
 
-.nav-icon a {
+.nav-icon1 a {
     height: 40px;
     display: flex;
     width: 50px;
@@ -105,11 +116,11 @@
     border-radius: 50%;
 }
 
-.nav-icon :hover {
-   background-color: white;
+.nav-icon1 :hover {
+   background-color: #1a83ff;
 }
 
-.smallIcons{
+.smallIcons1{
     padding-top: 20px;
 }
 
@@ -126,7 +137,7 @@
 }
 
 a {
-    color: white;
+    text-decoration: none;
 }
 
 .nav-text a:hover {

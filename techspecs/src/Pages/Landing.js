@@ -10,14 +10,14 @@ function Landing() {
                     <h1>Dashboard</h1>
                 </div>
                 <div className="chartsContainer">
-                    <div class="parent">
-                        <div class="div1"> </div>
-                        <div class="div2"> </div>
-                        <div class="div3"> </div>
-                        <div class="div4"> </div>
-                        <div class="div5"> </div>
-                        <div class="div6"> </div>
-                        <div class="div7"> </div>
+                    <div className="parent">
+                        <div className="div1"> </div>
+                        <div className="div2"> </div>
+                        <div className="div3"> </div>
+                        <div className="div4"> </div>
+                        <div className="div5"> </div>
+                        <div className="div6"> </div>
+                        <div className="div7"> </div>
                     </div>
                 </div>
             </div>
