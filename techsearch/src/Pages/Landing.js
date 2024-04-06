@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Components/StyleSheets/Landing.css';
+import RadarChart from '../Components/Radarchart';
 
 function Landing() {
     return ( 
@@ -14,7 +15,7 @@ function Landing() {
                         <div className="div1"> </div>
                         <div className="div2"> </div>
                         <div className="div3"> </div>
-                        <div className="div4"> </div>
+                        <div className="div4"> <RadarChart /> </div>
                         <div className="div5"> </div>
                         <div className="div6"> </div>
                         <div className="div7"> </div>
