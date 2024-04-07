@@ -10,24 +10,24 @@ import Timeline from './Pages/Timeline';
 
 
 function App() {
-  const [data, setData] = useState(null);
+  // const [data, setData] = useState(null);
 
-  useEffect(() => {
-    // const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImN1c19QWVJ0UTRpRHVsMEhKRyIsIm1vZXNpZlByaWNpbmdJZCI6InByaWNlXzFNUXF5dkJESWxQbVVQcE1SWUVWdnlLZSIsImlhdCI6MTcwNzgyNjkzNH0.tHSyl4ST6mJHfCVXi4-UruX8NliPcV8xczE3CtAUZ8Q'; // Replace 'YOUR_BEARER_TOKEN_HERE' with your actual bearer token
+  // useEffect(() => {
+  //   const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImN1c19QWVJ0UTRpRHVsMEhKRyIsIm1vZXNpZlByaWNpbmdJZCI6InByaWNlXzFNUXF5dkJESWxQbVVQcE1SWUVWdnlLZSIsImlhdCI6MTcwNzgyNjkzNH0.tHSyl4ST6mJHfCVXi4-UruX8NliPcV8xczE3CtAUZ8Q'; // Replace 'YOUR_BEARER_TOKEN_HERE' with your actual bearer token
 
-    axios.get('https://api.techspecs.io/v4/product/detail', {
-      headers: {
-        Authorization: `Bearer ${token}`
-      }
-    })
-      .then(response => {
-        console.log(response.data);
-        setData(response.data);
-      })
-      .catch(error => {
-        console.error('Error fetching data: ', error);
-      });
-  }, []);
+  //   axios.get('https://api.techspecs.io/v4/product/detail', {
+  //     headers: {
+  //       Authorization: `Bearer ${token}`
+  //     }
+  //   })
+  //     .then(response => {
+  //       console.log(response.data);
+  //       setData(response.data);
+  //     })
+  //     .catch(error => {
+  //       console.error('Error fetching data: ', error);
+  //     });
+  // }, []);
 
   return (
     <Router>

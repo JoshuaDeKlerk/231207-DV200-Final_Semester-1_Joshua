@@ -9,13 +9,18 @@ function Landing() {
             <div className="landing-content">
                 <div className="dashboardTop">
                     <h1>Dashboard</h1>
+                    <h1>TechSearch</h1>
                 </div>
                 <div className="chartsContainer">
                     <div className="parent">
                         <div className="div1"> </div>
                         <div className="div2"> </div>
                         <div className="div3"> </div>
-                        <div className="div4"> <RadarChart /> </div>
+                        <div className="div4"> 
+                            <div className='radarChartDiv'>
+                                <RadarChart /> 
+                            </div>
+                        </div>
                         <div className="div5"> </div>
                         <div className="div6"> </div>
                         <div className="div7"> </div>

@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    width: 80px;
+    width: 4%;
     position: fixed;
     border-right: 1px solid rgba(255, 255, 255, 0.40);
     background: linear-gradient(180deg, #282828 100%, rgba(40, 40, 40, 0.60) 100%);
