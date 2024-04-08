@@ -54,6 +54,9 @@
     border: 1px solid rgba(255, 255, 255, 0.20);   
     background: linear-gradient(121deg, rgba(255, 255, 255, 0.20) 13.56%, rgba(255, 255, 255, 0.05) 80.33%);
     backdrop-filter: blur(17.5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .div15 { 
@@ -72,4 +75,27 @@
     border: 1px solid rgba(255, 255, 255, 0.20);   
     background: linear-gradient(121deg, rgba(255, 255, 255, 0.20) 13.56%, rgba(255, 255, 255, 0.05) 80.33%);
     backdrop-filter: blur(17.5px);
+}
+
+.titleTimeline{
+    color: white;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textTimeline{
+    color: white;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.chartContaineTimeline{
+    width: 100%;
 }

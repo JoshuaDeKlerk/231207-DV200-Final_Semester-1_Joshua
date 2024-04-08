@@ -9,6 +9,7 @@
     border: 1px solid rgba(255, 255, 255, 0.20);   
     background: linear-gradient(121deg, rgba(255, 255, 255, 0.20) 13.56%, rgba(255, 255, 255, 0.05) 80.33%);
     backdrop-filter: blur(17.5px);
+    position: relative;
 }
   
 .search-form {
@@ -52,3 +53,11 @@
 .search-input:focus {
     border-color: transparent; 
 }
+
+.dropdown {
+    position: absolute;
+    top: calc(100% + 5px); /* Adjust this value as needed */
+    left: 0;
+    z-index: 999;
+}
+  

@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import '../Components/StyleSheets/Compare.css';
 import SearchBox from '../Components/SearchBox';
+import S24 from '../Components/StyleSheets/assets/S24.jpeg';
+import Apple from '../Components/StyleSheets/assets/Apple.jpeg';
+
 
 function Compare() {
     const [searchResults1, setSearchResults1] = useState([]);
@@ -8,16 +11,16 @@ function Compare() {
     const [showResults1, setShowResults1] = useState(false);
     const [showResults2, setShowResults2] = useState(false);
 
-    const handleSearch1 = (query) => {
-        setSearchResults1([{ id: 1, title: 'Result 1' }, { id: 2, title: 'Result 2' }, { id: 3, title: 'Result 3' }, { id: 4, title: 'Result 4' }, { id: 5, title: 'Result 5' }]);
-        setShowResults1(!showResults1);
+    // Handling search results from SearchBox component
+    const handleSearch1 = (results) => {
+        setSearchResults1(results);
+        setShowResults1(true); // Show results when available
     }
 
-    const handleSearch2 = (query) => {
-        setSearchResults2([{ id: 1, title: 'Result 1' }, { id: 2, title: 'Result 2' }, { id: 3, title: 'Result 3' }, { id: 4, title: 'Result 4' }, { id: 5, title: 'Result 5' }]);
-        setShowResults2(!showResults2); // Toggle the search results list
+    const handleSearch2 = (results) => {
+        setSearchResults2(results);
+        setShowResults2(true); // Show results when available
     }
-    
 
     return (
         <div>
@@ -36,38 +39,41 @@ function Compare() {
                                 </div>
                             </div>
                             <div className="div9">
-                                <div className='SearchResultContainer'>
-                                    {showResults1 && (
-                                        <ul className="search-results">
-                                            {searchResults1.slice(0, 5).map(result => (
-                                                <li key={result.id}>
-                                                    <div className='imageList'></div>
-                                                    {result.title}
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    )}
+                                <div className='SearchResultContainer' style={{ display: showResults1 ? 'block' : 'none' }}>
+                                    <ul>
+                                        {searchResults1.slice(0, 5).map(result => (
+                                            <li key={result.id}>
+                                                <div className='imageList'>
+                                                    <img src={result.image} alt={result.title} />
+                                                </div>
+                                                <div>
+                                                    Model: {result.model}
+                                                </div>
+                                            </li>
+                                        ))}
+                                    </ul>
                                 </div>
                             </div>
-                            <div className="div10"> </div>
-                            <div className="div11"> </div>
+                            <div className="div10"> <img src={S24} alt="S24" style={{ width: '100%', height: '100%',  objectFit: 'cover', borderRadius: '10px'}} /></div>
+                            <div className="div11"> <img src={Apple} alt="Apple" style={{ width: '100%', height: '100%',  objectFit: 'cover', borderRadius: '10px'}} /> </div>
                             <div className="div12">
                                 <div className='searchBoxContainer'>
                                     <SearchBox onSearch={handleSearch2} className="search-box" />
                                 </div>
                             </div>
                             <div className="div13">
-                                <div className='SearchResultContainer'>
-                                    {showResults2 && (
-                                        <ul className="search-results">
-                                            {searchResults2.slice(0, 5).map(result => (
-                                                <li key={result.id}>
-                                                    <div className='imageList'></div>
-                                                    {result.title}
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    )}
+                                <div className='SearchResultContainer' style={{ display: showResults2 ? 'block' : 'none' }}>
+                                    {searchResults2.slice(0, 5).map(result => (
+                                        <li key={result.id}>
+                                            <div className='imageList'>
+                                                <img src={result.image} alt={result.title} />
+                                            </div>
+                                            <div>
+                                                ID: {result.id}
+                                                Model: {result.model}
+                                            </div>
+                                        </li>
+                                    ))}
                                 </div>
                             </div>
                         </div>

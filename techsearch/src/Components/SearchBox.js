@@ -5,7 +5,6 @@ import axios from "axios";
 
 function SearchBox({ onSearch }) {
   const [query, setQuery] = useState('');
-  const [searchResults, setSearchResults] = useState([]);
 
   const handleChange = (event) => {
     setQuery(event.target.value);
@@ -20,24 +19,31 @@ function SearchBox({ onSearch }) {
         url: 'https://api.techspecs.io/v4/product/search',
         params: { query },
         headers: {
-          Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImN1c19QWVJ0UTRpRHVsMEhKRyIsIm1vZXNpZlByaWNpbmdJZCI6InByaWNlXzFNUXF5dkJESWxQbVVQcE1NNWc2RmVvbyIsImlhdCI6MTcwNzgyNjkzNH0.0vUGAG4qreqbFV_7t78NKHa67fmChm5I_CswIA1fJg0'
+          // Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImN1c19QWVJ0UTRpRHVsMEhKRyIsIm1vZXNpZlByaWNpbmdJZCI6InByaWNlXzFNUXF5dkJESWxQbVVQcE1NNWc2RmVvbyIsImlhdCI6MTcwNzgyNjkzNH0.0vUGAG4qreqbFV_7t78NKHa67fmChm5I_CswIA1fJg0'
         }
       };
 
       const response = await axios.request(options);
       console.log(response.data); // Console log the response data
       
-      // Extract the search results from the response
-      const searchResultsData = response.data.data;
-      setSearchResults(searchResultsData); // Update search results state with the data
-      onSearch(searchResultsData); // Pass the data to the parent component
+      // Filter out items where thumbnail and large are null
+      const filteredItems = response.data.data.items.filter(item => item.image.thumbnail !== null || item.image.large !== null);
+      
+      // Get first 5 filtered items
+      const firstFiveItems = filteredItems.slice(0, 5);
+          firstFiveItems.forEach((item, index) => {
+      console.log(`Item ${index}:`);
+      console.log("Image:", item.image);
+      console.log("Product:", item.product);
+    });
+      // Pass the query and first 5 filtered items to the parent component
+      onSearch(query, firstFiveItems);
     } catch (error) {
       console.error(error);
     }
   };
 
   return (
-    <div>
       <form onSubmit={handleSubmit} className="search-box-container">
         <input
           type="text"
@@ -48,16 +54,6 @@ function SearchBox({ onSearch }) {
         />
         <button type="submit" className="search-button"><IoSearchOutline /></button>
       </form>
-      
-      {/* Display search results */}
-      <div>
-        <h2>Search Results:</h2>
-        <p>Status: {searchResults.status}</p>
-        <p>Message: {searchResults.message}</p>
-        <p>Total Results: {searchResults.data.total_results}</p>
-        {/* Add other properties to display */}
-      </div>
-    </div>
   );
 }
 

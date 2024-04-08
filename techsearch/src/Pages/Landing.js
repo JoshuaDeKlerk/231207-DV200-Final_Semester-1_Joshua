@@ -29,7 +29,7 @@ function Landing() {
                                 <div className='lineGap'></div>
                             </div>
                             <div className='radarChartDiv'>
-                                {/* <RadarChart /> */}
+                                <RadarChart />
                             </div>
                         </div>
                         <div className="div5">
