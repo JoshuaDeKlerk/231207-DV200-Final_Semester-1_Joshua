@@ -1,0 +1,75 @@
+.timeline-container {
+    display: flex;
+}
+
+.navbar-spacer {
+    width: 4%;
+}
+
+.timeline-content {
+    flex-grow: 1;
+    height: 100vh;
+    background-color: #121212;
+    width: 96%;
+}
+
+.timelineTop {
+    width: 100%;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.timelineTop h1{
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+    color: white;
+}
+
+.contentContainer1{
+    height: 90vh;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.parent2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    width: 100%;
+    }
+    
+
+.div14 { 
+    grid-area: 1 / 1 / 4 / 4; 
+    background-color: rgb(9, 32, 77);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.20);   
+    background: linear-gradient(121deg, rgba(255, 255, 255, 0.20) 13.56%, rgba(255, 255, 255, 0.05) 80.33%);
+    backdrop-filter: blur(17.5px);
+}
+
+.div15 { 
+    grid-area: 1 / 4 / 3 / 6; 
+    background-color: rgb(9, 32, 77);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.20);   
+    background: linear-gradient(121deg, rgba(255, 255, 255, 0.20) 13.56%, rgba(255, 255, 255, 0.05) 80.33%);
+    backdrop-filter: blur(17.5px);
+}
+
+.div16 { 
+    grid-area: 3 / 4 / 4 / 6; 
+    background-color: rgb(9, 32, 77);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.20);   
+    background: linear-gradient(121deg, rgba(255, 255, 255, 0.20) 13.56%, rgba(255, 255, 255, 0.05) 80.33%);
+    backdrop-filter: blur(17.5px);
+}
