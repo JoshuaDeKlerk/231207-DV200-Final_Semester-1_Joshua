@@ -53,52 +53,89 @@ Ensure you have the following installed:
 
 ### How to install
 
-#### Backend Setup
-
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/EnzoDV08/DV_200_Group2_Final.git
-    cd rentalfinder/backend
-    ```
-2. **Install backend dependencies**:
-    ```bash
-    npm install
-    ```
-3. **Create a `.env` file** in the `backend` directory and add:
-    ```env
-    PORT=5000
-    MONGO_URI=mongodb+srv://Enzo:enzo12345@rentalfinder.ufywffo.mongodb.net/react_db?retryWrites=true&w=majority&appName=RentalFinder
-    ```
-4. **Ensure MongoDB server is running**:
-    ```bash
-    mongod
+    git clone https://github.com/JoshuaDeKlerk/TechSearch
     ```
 
-#### Frontend Setup
-
-1. **Navigate to the frontend directory**:
-    ```bash
-    cd ../rentalfinder
-    ```
 2. **Install frontend dependencies**:
     ```bash
+    cd techsearch
     npm install react-scripts
     ```
 
+2. **Start Development Server**:
+    ```bash
+    npm start
+    ```
 
- 
-[Api Research](https://github.com/JoshuaDeKlerk/231207_DV200_Final_Semester-1_Joshua-De-Klerk/files/14371596/Api.Research.pdf)
+## Features
 
-Inspration:
+| Page             | Description                                                |
+| ---------------- | ---------------------------------------------------------- |
+| Dashboard Page     | Introduces users to the platform and allows tech searches. |
+| Compare Page     | Enables comparison of features across multiple products.   |
+| Timeline Page    | Displays the history and evolution of a chosen product.    |
 
-[User Interface](https://pin.it/3OEehYU7C)
+## The Idea
 
-[Branded Components](https://pin.it/3j45LcXSX)
+TechSearch aims to simplify the process of comparing and learning about various tech products by providing a clean, functional interface that presents relevant information in a digestible format. The platform allows users to easily search for technology products, compare their features, and explore timelines of product evolution, making it an ideal tool for tech enthusiasts and informed buyers.
 
-Low Fidelity Wireframes:
+### DashBoard Page
+![Home Page UI Design](./assets/Home.png)
 
-[Landing Page](https://github.com/JoshuaDeKlerk/231207_DV200_Final_Semester-1_Joshua-De-Klerk/files/14371639/Landing.Page.pdf)
+### Compare Page
+![Compare Page UI Design](./assets/Compare.png)
 
-[Compare Page](https://github.com/JoshuaDeKlerk/231207_DV200_Final_Semester-1_Joshua-De-Klerk/files/14371648/Compare.Page.pdf)
+### Timeline Page
+![timeline Page UI Design](./assets/Timeline.png)
 
-[Timeline Page](https://github.com/JoshuaDeKlerk/231207_DV200_Final_Semester-1_Joshua-De-Klerk/files/14371640/Timeline.Page.pdf)
+## Development Process
+
+### Highlights
+* **User-Friendly UI**: Designed with a clean and minimalist interface to ensure easy navigation and a positive user experience.
+* **Real-Time Data**: Integrated api to allow real-time updates, ensuring that users have access to the latest information on technology products.
+
+### Challenges
+* **Api Management**: Ensured data consistency and real-time updates using TechSpecs Api.
+* **Responsive Design**: Worked to make the layout and functionality accessible and consistent across different devices, ensuring a seamless experience on both mobile and desktop.
+
+## Future Implementations
+
+* **Enhanced Comparison Metrics**: Add more detailed features and specifications to give users a deeper level of comparison.
+* **User Profiles**: Allow users to create accounts where they can save favorite products, comparisons, and timelines.
+* **Social Sharing**: Enable users to share comparisons or timelines on social media platforms.
+* **Customizable Filters**: Add advanced filters to allow users to narrow down results based on specific criteria like brand, release year, and price range.
+
+## Mockups
+
+### DashBoard Mockup
+![TechSearch Mockup 1](./assets/Mockup%202.png)
+
+### Compare Mockup
+![TechSearch Mockup 1](./assets/Mockup%201.png)
+
+### Timeline Mockup
+![TechSearch Mockup 1](./assets/Mockup%203.png)
+
+## Other Resources
+
+- **User Interface Inspiration** - [Pinterest Inspiration Board](https://pin.it/3OEehYU7C)
+- **Branded Components Inspiration** - [Pinterest Components Board](https://pin.it/3j45LcXSX)
+- **Demonstration Video** - [Link To Demonstration Video](https://drive.google.com/drive/folders/1IJ0_IzRdkvFpxXZKpwiYEPn-YkA6Mhau?usp=sharing)
+
+## Author
+
+- **Joshua De Klerk** - [Github](https://github.com/JoshuaDeKlerk)
+
+## Contact
+
+- **Joshua De Klerk** - [231204@virtualwindow.co.za](mailto:231204@virtualwindow.co.za)
+- **Project Link** - https://github.com/JoshuaDeKlerk/TechSearch 
+
+## Acknowledgements
+
+- [Stack Overflow](https://stackoverflow.com/)
+- [Figma](https://www.figma.com/)
+- [Lecturer](https://github.com/TsungaiKats)
+- [Pinterest](https://za.pinterest.com/)
